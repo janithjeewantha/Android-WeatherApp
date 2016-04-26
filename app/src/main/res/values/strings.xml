@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <array name="cities_list">
+        <item>Colombo</item>
+        <item>Galle</item>
+        <item>Kandy</item>
+        <item>Matara</item>
+        <item>Panadura</item>
+        <item>Kalutara</item>
+        <item>Hikkaduwa</item>
+        <item>Ambalangoda</item>
+        <item>Kurunegala</item>
+        <item>Trincomalee</item>
+        <item>Jaffna</item>
+    </array>
+
+</resources>

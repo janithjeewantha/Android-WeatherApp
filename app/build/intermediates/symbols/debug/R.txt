@@ -451,7 +451,9 @@ int drawable abc_textfield_default_mtrl_alpha 0x7f020047
 int drawable abc_textfield_search_activated_mtrl_alpha 0x7f020048
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f020049
 int drawable abc_textfield_search_material 0x7f02004a
-int drawable notification_template_icon_bg 0x7f02004b
+int drawable ic_info_white_24dp 0x7f02004b
+int drawable ic_settings_white_24dp 0x7f02004c
+int drawable notification_template_icon_bg 0x7f02004d
 int id action0 0x7f0d0054
 int id action_bar 0x7f0d0041
 int id action_bar_activity_content 0x7f0d0000
@@ -526,6 +528,7 @@ int id search_plate 0x7f0d0049
 int id search_src_text 0x7f0d004a
 int id search_voice_btn 0x7f0d004e
 int id select_dialog_listview 0x7f0d004f
+int id settings 0x7f0d0061
 int id shortcut 0x7f0d003a
 int id showCustom 0x7f0d000f
 int id showHome 0x7f0d0010
@@ -595,6 +598,7 @@ int layout select_dialog_item_material 0x7f040025
 int layout select_dialog_multichoice_material 0x7f040026
 int layout select_dialog_singlechoice_material 0x7f040027
 int layout support_simple_spinner_dropdown_item 0x7f040028
+int menu preferences 0x7f0e0000
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000
 int string abc_action_bar_home_description_format 0x7f060001
@@ -615,7 +619,9 @@ int string abc_searchview_description_voice 0x7f06000f
 int string abc_shareactionprovider_share_with 0x7f060010
 int string abc_shareactionprovider_share_with_application 0x7f060011
 int string abc_toolbar_collapse_description 0x7f060012
-int string app_name 0x7f060014
+int string about 0x7f060014
+int string app_name 0x7f060015
+int string settings 0x7f060016
 int string status_bar_notification_info_overflow 0x7f060013
 int style AlertDialog_AppCompat 0x7f090086
 int style AlertDialog_AppCompat_Light 0x7f090087

@@ -1614,7 +1614,9 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020048;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020049;
         public static final int abc_textfield_search_material=0x7f02004a;
-        public static final int notification_template_icon_bg=0x7f02004b;
+        public static final int ic_info_white_24dp=0x7f02004b;
+        public static final int ic_settings_white_24dp=0x7f02004c;
+        public static final int notification_template_icon_bg=0x7f02004d;
     }
     public static final class id {
         public static final int action0=0x7f0d0054;
@@ -1691,6 +1693,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f0d004a;
         public static final int search_voice_btn=0x7f0d004e;
         public static final int select_dialog_listview=0x7f0d004f;
+        public static final int settings=0x7f0d0061;
         public static final int shortcut=0x7f0d003a;
         public static final int showCustom=0x7f0d000f;
         public static final int showHome=0x7f0d0010;
@@ -1765,6 +1768,9 @@ containing a value of this type.
         public static final int select_dialog_singlechoice_material=0x7f040027;
         public static final int support_simple_spinner_dropdown_item=0x7f040028;
     }
+    public static final class menu {
+        public static final int preferences=0x7f0e0000;
+    }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
     }
@@ -1788,7 +1794,9 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f060010;
         public static final int abc_shareactionprovider_share_with_application=0x7f060011;
         public static final int abc_toolbar_collapse_description=0x7f060012;
-        public static final int app_name=0x7f060014;
+        public static final int about=0x7f060014;
+        public static final int app_name=0x7f060015;
+        public static final int settings=0x7f060016;
         public static final int status_bar_notification_info_overflow=0x7f060013;
     }
     public static final class style {

@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -57,6 +58,12 @@ public class MainActivity extends AppCompatActivity implements
         } catch (MalformedURLException e) {
             Log.d("URL Error", "Weather API URL is malformed");
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.preferences, menu);
+        return true;
     }
 
     @Override
@@ -131,6 +138,8 @@ public class MainActivity extends AppCompatActivity implements
 
     }
 
+    //--------------------- Not used anymore. A new activity is used instead -----------------------
+    /*
     private void showDetailFragment(String msg) {
 
         FrameLayout detailFrame = (FrameLayout) findViewById(R.id.list_container);
@@ -147,6 +156,8 @@ public class MainActivity extends AppCompatActivity implements
         transaction.setTransition(FragmentTransaction.TRANSIT_NONE);
         transaction.commit();
     }
+    */
+    //----------------------------------------------------------------------------------------------
 
     private void getPermissions() {
         if (ContextCompat.checkSelfPermission(this,

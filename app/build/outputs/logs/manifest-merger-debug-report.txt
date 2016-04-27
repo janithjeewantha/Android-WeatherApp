@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml:2:1-22:12
+ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml:2:1-23:12
 	xmlns:android
 		ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml:2:11-69
 	package
@@ -18,7 +18,7 @@ ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidMa
 	android:name
 		ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml:7:5-20:19
+ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml:7:5-21:19
 MERGED from [com.android.support:appcompat-v7:23.2.1] /home/janith/AndroidStudioProjects/WeatherApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:23.2.1] /home/janith/AndroidStudioProjects/WeatherApp2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] /home/janith/AndroidStudioProjects/WeatherApp2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/AndroidManifest.xml:7:5-20
@@ -51,6 +51,10 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
 		ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml:17:27-74
+activity#com.janith.weatherapp.DetailActivity
+ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml:20:9-61
+	android:name
+		ADDED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml:20:19-49
 uses-sdk
 INJECTED from /home/janith/AndroidStudioProjects/WeatherApp2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.2.1] /home/janith/AndroidStudioProjects/WeatherApp2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/AndroidManifest.xml:21:5-23:78

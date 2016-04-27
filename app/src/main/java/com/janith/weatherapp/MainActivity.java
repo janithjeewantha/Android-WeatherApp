@@ -1,6 +1,7 @@
 package com.janith.weatherapp;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -14,10 +15,12 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.janith.weatherapp.controller.FetchData;
 import com.janith.weatherapp.controller.Utilities;
 import com.janith.weatherapp.model.CityForecast;
 import com.janith.weatherapp.model.Forecast;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -29,11 +32,14 @@ public class MainActivity extends AppCompatActivity implements
     private CityListFragment cityListFragment = null;
     private DetailFragment detailFragment = null;
     private URL weatherApiUrl;
+    private Intent intent;
+    public final static String FORECAST = "com.janith.weatherapp.FORECAST";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         if (Utilities.isTab(this)){
             tabletConfig();
         } else {
@@ -56,7 +62,11 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     public void onCitySelected(int position) {
 
-        TextView detailTextView = (TextView) findViewById(R.id.detail_field);
+        TextView detailTextView = null;
+        if (Utilities.isTab) {
+            detailTextView = (TextView) findViewById(R.id.detail_field);
+        }
+
         String[] citiesList = getResources().getStringArray(R.array.cities_list);
         String city = citiesList[position];
 
@@ -73,11 +83,13 @@ public class MainActivity extends AppCompatActivity implements
         }
 
         if(!Utilities.isTab){
-            if(forecast!=null) {
+            if(forecast!=null & intent!=null) {
                 CityForecast cityForecast = forecast.getCityForcast(city);
-                showDetailFragment(cityForecast.getForcastString());
-            }
+//                showDetailFragment(cityForecast.getForecastString());
+                intent.putExtra(FORECAST, cityForecast.getForcastString());
+                startActivity(intent);
 
+            }
         }
     }
 
@@ -114,6 +126,9 @@ public class MainActivity extends AppCompatActivity implements
         transaction.replace(R.id.list_container, cityListFragment);
         transaction.setTransition(FragmentTransaction.TRANSIT_NONE);
         transaction.commit();
+
+        intent = new Intent(this, DetailActivity.class);
+
     }
 
     private void showDetailFragment(String msg) {

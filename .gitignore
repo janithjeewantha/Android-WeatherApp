@@ -45,3 +45,6 @@ captures/
 ### Android Patch ###
 gen-external-apklibs
 
+#tests
+src/androidTest
+src/test
